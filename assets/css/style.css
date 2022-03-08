@@ -198,8 +198,6 @@ p {
 .navbar li {
   position: relative;
   padding: 10px 0 10px 28px;
-  display:  flex;
-
 }
 
 .navbar a, .navbar a:focus {
@@ -213,7 +211,6 @@ p {
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
-  margin-left: 15px;
 }
 
 .navbar a i, .navbar a:focus i {
@@ -244,10 +241,6 @@ p {
   color: rgb(27,35,45);
 }
 
-.navbar li.active a:before {
-  visibility: visible;
-  width:  25px;
-}
 .navbar .dropdown ul {
   display: block;
   position: absolute;

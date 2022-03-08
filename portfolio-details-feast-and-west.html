@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>{{title}}</title>
+  <title>Gillian Trethewey- Portfolio Details</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -39,51 +39,58 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
+  <main id="main">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Gillian</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul id = "navigation">
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
 
-         {% for page in pages %}          
-            {% if 'blog-post-' not in page.title %}
-              {% if 'portfolio-details-' not in page.title %}
-                {% if 'index' not in page.title %} 
+        <div class="row gy-4">
 
-                    <li class="{% if title == page.title %}active{% endif %}"><a href= "{{ page.title }}.html">{{ page.title }}</a></li>
-                {% endif %}
-              {% endif %}            
-            {% endif %}
-          {% endfor %} 
-            </li>
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center">
 
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/feast-and-west-1.jpg" alt="">
+                </div>
 
-      <div class="header-social-links">
-        <a href="https://www.linkedin.com/in/gillian-trethewey-930585216/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-        <a href="https://github.com/GillianTrethewey" class="github"><i class="bi bi-github"></i></i></a>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/feast-and-west-2.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/feast-and-west-3.jpg" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Feast + West</h3>
+              <ul>
+                <li><strong>Category</strong>: Web Development</li>
+                <li><strong>Client</strong>: Pop & Grey</li>
+                <li><strong>Project URL</strong>: <a href="https://feastandwest.com/">Feast + West</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Web Development from Designer Files and Requests</h2>
+              <p>
+                Web development: Revision phase adjustments to previously done development work as per client requests. Worked with recipe card customization. Cross-browser testing.
+              </p>
+            </div>
+          </div>
+
+        </div>
       </div>
+    </section><!-- End Portfolio Details Section -->
 
-    </div>
-
-  </header><!-- End Header -->
-
-  {{content}}
-
-    <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <span>Gillian Trethewey</span>. All Rights Reserved
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
+    
+  </main><!-- End #main -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
